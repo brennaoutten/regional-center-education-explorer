@@ -65,10 +65,15 @@ async function loadPublishedRows(){
 function setDataStatus(kind, message){
   const n=document.getElementById('dataNotice'), s=document.getElementById('dataStatus');
   if(!n||!s)return;
-  n.classList.remove('error','loading');
-  if(kind==='error') n.classList.add('error');
-  if(kind==='loading') n.classList.add('loading');
-  n.querySelector('b').textContent = kind==='error' ? 'Data connection problem.' : kind==='loading' ? 'Connecting to live data…' : 'Live data connected.';
+  // Keep routine loading/success messages out of the public interface.
+  // Only surface the notice if the live data connection fails.
+  if(kind!=='error'){
+    n.classList.add('hidden');
+    return;
+  }
+  n.classList.remove('hidden','loading');
+  n.classList.add('error');
+  n.querySelector('b').textContent='Data connection problem.';
   s.textContent=message;
 }
 function canonicalizeRow(raw){

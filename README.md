@@ -22,3 +22,7 @@ The site uses:
 - `Source Year`, `Source Title`, and `Source Link` for source display and year filtering.
 
 If new columns or new interface behaviors are added, `app.js` may need to be updated.
+
+
+## Public-facing cleanup
+Routine live-data connection, tagging, and filter guidance notes are hidden from visitors. A connection notice appears only if the Google Sheet cannot be loaded.
