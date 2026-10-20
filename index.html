@@ -1,18 +1,43 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>California Regional Center Education & Training Explorer</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body><div class="wrap">
-<section class="hero"><div class="heroTop"><div><h1>California Regional Center Education & Training Explorer</h1><p>Explore education, training, outreach, and related activities identified in performance contracts, plans, and reports across California's 21 regional centers. Each activity keeps its source year, source document, exact activity text, activity-category tags, intended-audience tags, and source link.</p></div><span class="prototype">LIVE DATA</span></div><div class="stats"><div class="stat"><b id="statCenters">—</b><span>regional centers</span></div><div class="stat"><b id="statActivities">—</b><span>activity excerpts</span></div><div class="stat"><b id="statYears">—</b><span>source-year groups</span></div><div class="stat"><b id="statAudiences">—</b><span>audience tags</span></div></div></section>
-<div id="dataNotice" class="notice liveNotice hidden" role="alert"><b>Data connection problem.</b> <span id="dataStatus"></span></div>
-<div class="modeBar"><div class="seg"><button id="exploreBtn" class="active">Explore a center</button><button id="browseBtn">Browse all activities</button><button id="compareBtn">Compare centers</button></div></div>
-<section id="exploreMode" class="exploreMode"><div class="exploreGrid"><div class="card"><div class="head"><h2>Regional centers</h2><div class="controls"><select id="centerSelect"></select></div></div><div id="centerGrid" class="centerGrid"></div></div>
-<div class="card"><div class="body"><div class="centerTitle"><div><h2 id="centerName"></h2><div class="meta" id="centerSource"></div></div><span class="badge" id="centerCount"></span></div><div class="summary"><div class="mini"><div class="k">Source year(s)</div><div class="v" id="centerYear"></div></div><div class="mini"><div class="k">Categories represented</div><div class="v" id="centerCats"></div></div><div class="mini"><div class="k">Intended audiences</div><div class="v" id="centerAuds"></div></div></div></div><div class="filterStrip"><select id="centerCatFilter"><option value="">All activity categories</option></select><select id="centerAudFilter"><option value="">All intended audiences</option></select><input id="centerSearch" placeholder="Search this center's activities"></div><div id="centerActivities" class="activityList"></div></div></div></section>
-<section id="browseMode" class="card browseCard"><div class="head"><h2>Browse all activities</h2></div><div class="filterStrip"><input id="browseSearch" placeholder="Search activities, centers, source titles…"><select id="browseCenter"><option value="">All regional centers</option></select><select id="browseYear"><option value="">All source years</option></select><select id="browseCat"><option value="">All activity categories</option></select><select id="browseAud"><option value="">All intended audiences</option></select></div><div class="countNote" id="browseCount"></div><div class="tableWrap"><table><thead><tr><th>Regional Center</th><th>Year</th><th>Activity Category</th><th>Intended Audience</th><th>Specific Activity / Quote</th><th>Source</th></tr></thead><tbody id="browseBody"></tbody></table></div></section>
-<section id="compareMode" class="card compareCard"><div class="head"><h2>Compare regional centers</h2></div><div class="compareChooser"><div class="controls"><select id="compareAdd"></select><button class="btn primary" id="addCompare">Add center</button><select id="compareYear"><option value="">All source years</option></select><select id="compareCat"><option value="">All activity categories</option></select><select id="compareAud"><option value="">All intended audiences</option></select></div><div class="chips" id="compareChips"></div></div><div id="compareGrid" class="compareGrid"></div></section>
-<div class="foot">Live explorer backed by the Regional Center public Google Sheet feed. Source links remain attached to individual activities; category and audience tags can continue to be reviewed and updated in the working sheet.</div><script src="app.js"></script></div></body>
-</html>
+California Regional Center Education & Training Explorer
+Explore education, training, outreach, and related activities identified in performance contracts, plans, and reports across California's 21 regional centers. Each activity keeps its source year, source document, activity text, activity-category tags, role-based involvement tags, and source link.
+LIVE DATA
+—regional centers
+—activity excerpts
+—source-year groups
+—role-group labels
+Data connection problem.
+Explore a centerBrowse all activitiesCompare centers
+Regional centers
+
+
+
+
+Source year(s)
+
+Categories represented
+
+Provider / lead groups
+
+Direct audience groups
+
+Other involved groups
+
+All activity categoriesAll providers / leadsAll direct intended audiencesAll other involved / beneficiary groups
+
+Browse all activities
+All regional centersAll source yearsAll activity categoriesAll providers / leadsAll direct intended audiencesAll other involved / beneficiary groups
+
+Regional Center
+Year
+Activity Category
+Activity Provider / Lead
+Direct Intended Audience
+Other Involved / Beneficiary Groups
+Specific Activity / Quote
+Source
+
+Compare regional centers
+Add centerAll source yearsAll activity categoriesAll providers / leadsAll direct intended audiencesAll other involved / beneficiary groups
+
+
+Live explorer backed by the Regional Center public Google Sheet feed. Source links remain attached to individual activities; activity categories and the three role-based involvement fields can continue to be reviewed and updated in the working sheet.
