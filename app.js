@@ -1,7 +1,7 @@
 const RC_SHEET = {
   spreadsheetId: '1I4_rxfEN4k5yiqEMEUHZyKUzVStR_c8aXvlUDxsP9u0',
   gid: '1459522559',
-  sheetUrl: 'https://docs.google.com/spreadsheets/d/1I4_rxfEN4k5yiqEMEUHZyKUzVStR_c8aXvlUDxsP9u0/edit?gid=0'
+  sheetUrl: 'https://docs.google.com/spreadsheets/d/1I4_rxfEN4k5yiqEMEUHZyKUzVStR_c8aXvlUDxsP9u0/edit?gid=1459522559'
 };
 
 const FIELDS = {
